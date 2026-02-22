@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="sn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathberiya Siridhamma Dhahampasala</title>
+    <meta name="description" content="Official website of Pathberiya Siridhamma Dhahampasala.">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Abhaya+Libre:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app" class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo-icon"><i class="fa-solid fa-dharmachakra"></i></div>
+                <h1 class="logo-text">සිරිධම්ම දහම්පාසල<br><span>පාත්බේරිය</span></h1>
+            </div>
+            
+            <nav class="nav-menu">
+                <button class="nav-item active" data-target="home">
+                    <i class="fa-solid fa-house"></i> මුල් පිටුව (Home)
+                </button>
+                <button class="nav-item" data-target="administration">
+                    <i class="fa-solid fa-user-tie"></i> පරිපාලනය (Administration)
+                </button>
+                <button class="nav-item" data-target="teachers">
+                    <i class="fa-solid fa-chalkboard-user"></i> ආචාර්ය මණ්ඩලය (Teachers)
+                </button>
+                <button class="nav-item" data-target="leaders">
+                    <i class="fa-solid fa-star"></i> ශිෂ්‍ය නායක (Leaders)
+                </button>
+                <button class="nav-item" data-target="students">
+                    <i class="fa-solid fa-users"></i> සිසු පැමිණීම (Students)
+                </button>
+                <button class="nav-item" data-target="religious">
+                    <i class="fa-solid fa-seedling"></i> ආගමික කටයුතු (Religious)
+                </button>
+                <button class="nav-item" data-target="achievements">
+                    <i class="fa-solid fa-trophy"></i> ජයග්‍රහණ (Achievements)
+                </button>
+                <button class="nav-item" data-target="committees">
+                    <i class="fa-solid fa-users-gear"></i> කමිටු (Committees)
+                </button>
+            </nav>
+            <div class="sidebar-footer">
+                <p>Pathberiya, Parakaduwa.</p>
+                <p class="tel"><i class="fa-solid fa-phone"></i> 0714157537 / 0713649339</p>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section id="home" class="page-section active">
+                <div class="hero">
+                    <div class="hero-content">
+                        <span class="badge">සිරිධම්ම ගුණ සුවඳ</span>
+                        <h1 class="hero-title">පාත්බේරිය සිරිධම්ම දහම්පාසල</h1>
+                        <p class="hero-subtitle">ලිපිනය: පාත්බේරිය, පරකඩුව. | දුරකථන: 0714157537 / 0713649339</p>
+                        <p class="hero-desc">ගුණගරුක, විනයගරුක සහ ධර්මයට ලැදි අනාගත පරපුරක් බිහිකිරීමේ උතුම් පරමාර්ථය පෙරදැරිව.</p>
+                        <button class="btn-primary" onclick="app.switchTab('administration')">විස්තර බලන්න</button>
+                    </div>
+                    <div class="hero-shapes">
+                        <div class="shape circle-1"></div>
+                        <div class="shape circle-2"></div>
+                    </div>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-card glass">
+                        <i class="fa-solid fa-users stat-icon"></i>
+                        <h3 class="stat-number">350+</h3>
+                        <p class="stat-label">සිසු සිසුවියන්</p>
+                    </div>
+                    <div class="stat-card glass">
+                        <i class="fa-solid fa-chalkboard-user stat-icon"></i>
+                        <h3 class="stat-number">20</h3>
+                        <p class="stat-label">ආචාර්ය මණ්ඩලය</p>
+                    </div>
+                    <div class="stat-card glass">
+                        <i class="fa-solid fa-star stat-icon"></i>
+                        <h3 class="stat-number">25</h3>
+                        <p class="stat-label">ශිෂ්‍ය නායක මණ්ඩලය</p>
+                    </div>
+                    <div class="stat-card glass">
+                        <i class="fa-solid fa-book stat-icon"></i>
+                        <h3 class="stat-number">1-11</h3>
+                        <p class="stat-label">ශ්‍රේණි</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Administration Section -->
+            <section id="administration" class="page-section">
+                <div class="section-header">
+                    <h2>පරිපාලනය සහ ප්‍රධාන ආචාර්යවරු</h2>
+                    <p>ප්‍රධාන සහ උප ප්‍රධාන ආචාර්යතුමන්ගේ කාර්යභාරය</p>
+                </div>
+                <div class="content-card glass" id="admin-content">
+                    <!-- Rendered by JS -->
+                </div>
+            </section>
+
+            <!-- Teachers Section -->
+            <section id="teachers" class="page-section">
+                <div class="section-header">
+                    <h2>ආචාර්ය මණ්ඩලය</h2>
+                    <p>ආචාර්ය මණ්ඩලයේ 20 දෙනාගේ නාමලේඛනය සහ පන්තිභාර ගුරු භවතුන්</p>
+                </div>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="all-teachers">සියලු ආචාර්යවරු</button>
+                    <button class="tab-btn" data-tab="class-teachers">පන්තිභාර ආචාර්යවරු</button>
+                    <button class="tab-btn" data-tab="special-teachers">විශේෂ විෂයභාර</button>
+                </div>
+                
+                <div class="tab-content active glass" id="all-teachers">
+                    <table class="data-table" id="teachers-table">
+                        <thead><tr><th>අනු අංකය</th><th>නම</th><th>ප්‍රධාන විෂය/තනතුර</th></tr></thead>
+                        <tbody><!-- Rendered by JS --></tbody>
+                    </table>
+                </div>
+                
+                <div class="tab-content glass" id="class-teachers">
+                    <table class="data-table" id="class-teachers-table">
+                        <thead><tr><th>ශ්‍රේණිය</th><th>පන්තිභාර ගුරුතුමා/ගුරුතුමිය</th></tr></thead>
+                        <tbody><!-- Rendered by JS --></tbody>
+                    </table>
+                </div>
+
+                <div class="tab-content glass" id="special-teachers">
+                    <div class="special-teachers-grid" id="special-teachers-content">
+                        <!-- Rendered by JS -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Leaders Section -->
+            <section id="leaders" class="page-section">
+                <div class="section-header">
+                    <h2>ශිෂ්‍ය නායක / නායිකා මණ්ඩලය</h2>
+                    <p>ප්‍රධාන, උප ප්‍රධාන සහ සහකාර ශිෂ්‍ය නායක කමිටුව</p>
+                </div>
+                <div class="content-card glass mb-4" id="leader-teacher-content">
+                    <!-- Leader Teacher inCharge Rendered by JS -->
+                </div>
+                
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="leaders-list">නාමලේඛනය</button>
+                    <button class="tab-btn" data-tab="leaders-attendance">දෛනික පැමිණීම</button>
+                    <button class="tab-btn" data-tab="leaders-duties">කාර්යභාරය</button>
+                </div>
+
+                <div class="tab-content active glass" id="leaders-list">
+                    <table class="data-table" id="leaders-table">
+                        <thead><tr><th>අනු අංකය</th><th>නම</th><th>තනතුර</th></tr></thead>
+                        <tbody><!-- Rendered by JS --></tbody>
+                    </table>
+                </div>
+                
+                <div class="tab-content glass" id="leaders-attendance">
+                    <table class="data-table" id="leaders-attendance-table">
+                        <thead><tr><th>නම</th><th>තනතුර</th><th>පැමිණීම (අද)</th></tr></thead>
+                        <tbody><!-- Rendered by JS --></tbody>
+                    </table>
+                </div>
+
+                <div class="tab-content glass" id="leaders-duties">
+                     <div id="leaders-duties-content" class="padding-20"></div>
+                </div>
+            </section>
+
+            <!-- Students Section -->
+            <section id="students" class="page-section">
+                <div class="section-header">
+                    <h2>සිසු / සිසුවියන්ගේ දෛනික පැමිණීම</h2>
+                    <p>350 දෙනාගේ පැමිණීමේ නාමලේඛනය</p>
+                </div>
+                <div class="filter-bar glass">
+                    <input type="text" id="student-search" placeholder="නමෙන් සොයන්න..." class="search-input">
+                    <select id="grade-filter" class="select-input">
+                        <option value="all">සියලුම ශ්‍රේණි</option>
+                        <option value="1">1 වසර</option>
+                        <option value="2">2 වසර</option>
+                        <!-- Other grades via JS -->
+                    </select>
+                </div>
+                <div class="content-card glass no-pad">
+                    <table class="data-table" id="students-table">
+                        <thead><tr><th>අනු අංකය</th><th>නම</th><th>ශ්‍රේණිය</th><th>අද පැමිණීම</th></tr></thead>
+                        <tbody><!-- Rendered by JS --></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Religious Activities -->
+            <section id="religious" class="page-section">
+                <div class="section-header">
+                    <h2>ආගමික කටයුතු සහ මල් ගෙන ඒම</h2>
+                    <p>දෛනික මල් ගෙන ඒම සහ පෝයදින ගිලන්පස පූජාව</p>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="flowers-list">මල් ගෙන එන සිසුන්</button>
+                    <button class="tab-btn" data-tab="poya-puja">ගිලන්පස පූජාවට සහභාගීවන අය</button>
+                </div>
+
+                <div class="tab-content active glass" id="flowers-list">
+                    <table class="data-table" id="flowers-table">
+                        <thead><tr><th>නම</th><th>දිනය</th><th>ලබාගත් ලකුණු</th></tr></thead>
+                        <tbody><!-- Rendered by JS --></tbody>
+                    </table>
+                </div>
+
+                <div class="tab-content glass" id="poya-puja">
+                    <ul class="styled-list" id="poya-list">
+                        <!-- Rendered by JS -->
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Achievements Section -->
+            <section id="achievements" class="page-section">
+                <div class="section-header">
+                    <h2>ඇගයීම් සහ ජයග්‍රහණ</h2>
+                    <p>ත්‍යාග සහ සහතිකපත් ලබාදෙන සිසුන්ගේ නාමලේඛනය</p>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card glass">
+                        <i class="fa-solid fa-medal trophy-icon gold"></i>
+                        <h3>වැඩිම මල් ලකුණු ගත් සිසුවා/සිසුවිය</h3>
+                        <p class="winner-name" id="highest-flower-winner">-</p>
+                        <span class="badge">ත්‍යාග සහ සහතිකපත්‍ර</span>
+                    </div>
+                    <div class="achievement-card glass">
+                        <i class="fa-solid fa-hands-praying trophy-icon blue"></i>
+                        <h3>හොඳම විනයගරුක සිසුවා සහ සිසුවිය</h3>
+                        <p class="winner-name" id="best-disciplined-winner">-</p>
+                        <span class="badge">ත්‍යාග සහ සහතිකපත්‍ර</span>
+                    </div>
+                    <div class="achievement-card glass">
+                        <i class="fa-solid fa-calendar-check trophy-icon green"></i>
+                        <h3>වැඩිම දින ගණනක් පැමිණි සිසු/සිසුවිය</h3>
+                        <p class="winner-name" id="highest-attendance-winner">-</p>
+                        <span class="badge">ත්‍යාග සහ සහතිකපත්‍ර</span>
+                    </div>
+                </div>
+
+                <div class="content-card glass mt-4">
+                    <h3>පන්ති මට්ටමින් වැඩිම ලකුණු ගත් 3 දෙනා (1-11 වසර)</h3>
+                    <table class="data-table" id="top-students-table">
+                        <thead><tr><th>ශ්‍රේණිය</th><th>පළමු දිග</th><th>දෙවන දිග</th><th>තුන්වන දිග</th></tr></thead>
+                        <tbody><!-- Rendered by JS --></tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- Committees Section -->
+            <section id="committees" class="page-section">
+                <div class="section-header">
+                    <h2>කමිටු සහ සංගම්</h2>
+                    <p>පාසලේ ප්‍රගතිය උදෙසා ක්‍රියාත්මක වන කමිටු</p>
+                </div>
+
+                <div class="grid-2-col">
+                    <div class="content-card glass">
+                        <h3>උත්සව සහ චාරිකා කමිටුව</h3>
+                        <ul class="styled-list" id="event-committee">
+                            <!-- Rendered by JS -->
+                        </ul>
+                    </div>
+                    <div class="content-card glass">
+                        <h3>දහම්පාසල් සංවර්ධන කමිටුව</h3>
+                        <ul class="styled-list" id="dev-committee">
+                            <!-- Rendered by JS -->
+                        </ul>
+                    </div>
+                    <div class="content-card glass col-span-2">
+                        <h3>තරුණ බෞද්ධ සමිතිය</h3>
+                        <p class="text-sm opacity-80 mb-3">නිලධාරීන් සහ කාරක සභා සාමාජිකයින් 11 දෙනාගේ නාමලේඛනය</p>
+                        <div class="ymba-grid" id="ymba-committee">
+                            <!-- Rendered by JS -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
